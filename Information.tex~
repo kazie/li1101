@@ -1,0 +1,74 @@
+\documentclass[a4paper,11pt]{kth-mag}
+
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage[swedish,english]{babel}
+\usepackage{modifications}
+
+\usepackage[natbib=true,style=alphabetic]{biblatex}
+\bibliography{Information}
+
+%\usepackage{hyperref} % Throws a warning when included, but compiles just fine
+\usepackage{multicol}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{xfrac}
+
+\def\thetitle{Geographical tactical voting in Swedish parliament elections}
+\title{\thetitle}
+\subtitle{Is it possible to gain additional parliament seats by moving votes between constituencies?}
+\foreigntitle{Geografisk taktikröstning i svenska riksdagsval}
+
+\author{Victor Koronen \and Petter Salminen}
+\date{\today}
+\blurb{Bachelor's Thesis at CSC\\Supervisor: Alexander Baltatzis\\Examiner: Mårten Björkman} %% Stavas det kanske med z i baltatsis?
+\trita{}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\pagestyle{plain}
+\selectlanguage{english}
+\begin{abstract}
+\input{parts/abstract.en.tex}
+\end{abstract}
+
+\clearpage
+\begin{foreignabstract}{swedish}
+\input{parts/abstract.sv.tex}
+\end{foreignabstract}
+
+\input{parts/foreword.tex}
+\vfill
+\input{parts/statement_of_collaboration.tex}
+\vfill
+\input{parts/document_change_record.tex}
+
+\clearpage
+\tableofcontents*
+
+\mainmatter
+\pagestyle{newchap}
+\input{parts/introduction.tex}
+
+\input{parts/background.tex}
+
+\input{parts/analysis.tex}
+
+\input{parts/conclusions.tex}
+
+\cleardoublepage
+\printbibliography
+
+\listoffigures
+\listoftables
+
+\cleardoublepage
+\appendix
+\addappheadtotoc
+
+\end{document}
