@@ -9,6 +9,8 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Figures}{1}
+\contentsline {chapter}{Bibliography}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{List of Tables}{1}
+\contentsline {chapter}{List of Figures}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{List of Tables}{3}

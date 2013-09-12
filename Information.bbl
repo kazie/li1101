@@ -1,0 +1,44 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{shah}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Shah}{S.}%
+     {Dhruti}{D.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SD1}
+  \strng{fullhash}{SD1}
+  \field{labelalpha}{Sha11}
+  \field{sortinit}{S}
+  \field{note}{Retrieved 2012-02-12}
+  \field{title}{Arab Spring: 'It was the first time I felt I belonged'}
+  \verb{url}
+  \verb http://www.bbc.co.uk/news/world-middle-east-16275176
+  \endverb
+  \field{journaltitle}{BBC}
+  \field{month}{12}
+  \field{year}{2011}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

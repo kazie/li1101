@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian) (format=xelatex 2013.4.27)  8 SEP 2013 09:01
+This is XeTeX, Version 3.1415926-2.4-0.9998 (TeX Live 2012/Debian) (format=xelatex 2013.4.27)  12 SEP 2013 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1139,12 +1139,12 @@ Package biblatex Warning: Data encoding is 'utf8'.
 \openout4 = `Information-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Information.bbl' not found.
-No file Information.bbl.
+Package biblatex Info: ... file 'Information.bbl' found.
+(./Information.bbl)
 Package biblatex Info: Reference section=0 on input line 29.
 Package biblatex Info: Reference segment=0 on input line 29.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 32.
-(/usr/share/texmf/tex/latex/lm/t1lmss.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 File: kth_svv_comp_science_comm.pdf Graphic file (type QTm)
@@ -1206,13 +1206,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [6
 
+] [1] [2
+
 ]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 66.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+(./Information.lof) (./Information.lot) [3
 
-LaTeX Warning: Empty bibliography on input line 65.
-
-(./Information.lof) (./Information.lot) [1
-
-] [2
+] [4
 
 ]
 \tf@toc=\write5
@@ -1230,12 +1233,12 @@ Package logreq Info: Writing requests to 'Information.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15733 strings out of 494003
- 256101 string characters out of 3152809
- 442241 words of memory out of 3000000
- 18770 multiletter control sequences out of 15000+200000
- 66129 words of font info for 61 fonts, out of 3000000 for 9000
+ 15890 strings out of 494003
+ 258807 string characters out of 3152809
+ 443242 words of memory out of 3000000
+ 18919 multiletter control sequences out of 15000+200000
+ 73506 words of font info for 64 fonts, out of 3000000 for 9000
  1144 hyphenation exceptions out of 8191
- 42i,11n,29p,852b,2497s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,35p,852b,2497s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Information.pdf (8 pages).
+Output written on Information.pdf (10 pages).
