@@ -1,0 +1,17 @@
+Spelar det egentligen någon större roll vilket programmeringsspråk man använder för att lösa en uppgift?
+
+Hur mycket krypto kan NSA knäcka inom en rimlig tid. Hur stor del av 'vanlig' trafik är det?
+
+Hur mycket vet egentligen stora företag som Google och Facebook om människor.
+
+Är kryptovalutor* någonting för framtiden?
+
+To which degree can you trust that Tor provides you with anonymity on the internet?
+
+How hard is it to implement Perfect forward secrecy on the web?
+
+In light of Apple's new announcement to ship fingerprint recognision for the iPhone 5S. 
+How easy will it be to bypass this security?
+
+
+
