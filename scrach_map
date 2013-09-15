@@ -1,0 +1,75 @@
+
+
+
+Börja söka ("Digital currency") AND ("future")
+IEEE Xplore - 49 result. (Fulltext)
+Inspec - FAIL.
+
+Hitta en intressant \cite{first},
+denna gav fina ord.
+
+
+INSPEC: CONTROLLED INDEXING
+electronic money.
+
+INSPEC: UNCONTROLLED INDEXING
+Bitcoin
+
+IEEE TERMS
+Cryptography
+Currency
+
+----
+
+Iteration 2.
+(("Digital currency") OR Bitcoin OR "electronic money" OR currency) AND cryptography AND ("future")
+
+IEEE Xplore - 5 result. (inte fulltext)
+IEEE Xplore - 554 result. (fulltext)
+Inspec - 23 result.
+
+Then I found nothing good, else from Inspec I got \cite{second}.
+
+Go back and try to find things tagged with "bitcoin" and analyze
+---
+
+Controlled:
+Economics.
+
+Uncontrolled
+Bitcoin
+
+So to take Bitcoin, Bitcoin Systems ...
+Instead of "future" I got to technological forecasting.
+(Bitcoin* OR "Electronic money") AND "technological forecasting"
+
+IEEE Xplore - 12 result. (Fulltext) (2 utan)
+Inspec - 11 result.
+
+IEEE Xplore en sak, \cite{tre}.
+
+---
+
+Måste vara mycket mindre specifierad.
+
+Bara
+Bitcoin*
+
+
+IEEE Xplore - 34 (Fulltext) (7 annars)
+Inspect - 21
+
+Still finding nothing really good, so I expand to
+more databases of ACM and ArXiv.
+
+ACM found \cite{Christ} as a cool thing.
+And pengartvätt \cite{Stokes}
+papper om Bitcoins\cite{Martins} 
+
+ArXiv found this thing\cite{bitsc}
+
+ACM - 45 results.
+ArXiv - 11 results.
+Scopus - 26 results.
+
+Found on scoopus these\cite{scoop1, scoop2, scoop3}

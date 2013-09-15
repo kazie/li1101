@@ -1,12 +1,15 @@
-\documentclass[a4paper,11pt]{kth-mag}
+\documentclass[a4paper,11pt,exjobb]{kth-mag}
 
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{lmodern}
-\usepackage[swedish,english]{babel}
+%\usepackage[swedish,english]{babel}
+\usepackage[swedish]{babel}
 \usepackage{modifications}
 
-\usepackage[natbib=true,style=alphabetic]{biblatex}
+%\usepackage[natbib=true,style=alphabetic]{biblatex}
+%\usepackage[natbib=true]{biblatex}
+\usepackage[natbib=true,style=ieee]{biblatex}
 \bibliography{Information}
 
 %\usepackage{hyperref} % Throws a warning when included, but compiles just fine
@@ -15,15 +18,19 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{xfrac}
+\usepackage{hyperref}
+%\usepackage{fancyref}
 
-\def\thetitle{Geographical tactical voting in Swedish parliament elections}
+%\setcounter{tocdepth}{1} 
+%\setcounter{secnumdepth}{1}
+\def\thetitle{Är kryptovalutor* någonting för framtiden?}
 \title{\thetitle}
-\subtitle{Is it possible to gain additional parliament seats by moving votes between constituencies?}
-\foreigntitle{Geografisk taktikröstning i svenska riksdagsval}
+\subtitle{*kryptovalutor är fullt digitala valutor som förlitar sig på kryptografi för att skapa och administreras. Största och mest kända heter Bitcoin (\textbaht, BTC, XBT).}
+%\foreigntitle{Geografisk taktikröstning i svenska riksdagsval}
 
-\author{Victor Koronen \and Petter Salminen}
+\author{Petter Salminen}
 \date{\today}
-\blurb{Bachelor's Thesis at CSC\\Supervisor: Alexander Baltatzis\\Examiner: Mårten Björkman} %% Stavas det kanske med z i baltatsis?
+\blurb{School of Computer Science, CSC\\Information Search LI1101, HT2013}
 \trita{}
 
 \begin{document}
@@ -31,45 +38,173 @@
 \frontmatter
 \maketitle
 
-\pagestyle{plain}
-\selectlanguage{english}
-\begin{abstract}
+%\pagestyle{plain}
+%\selectlanguage{english}
+%\begin{abstract}
+
 %\input{parts/abstract.en.tex}
-\end{abstract}
+%\end{abstract}
 
 \clearpage
-\begin{foreignabstract}{swedish}
+%\begin{foreignabstract}{swedish}
 %\input{parts/abstract.sv.tex}
-\end{foreignabstract}
+%\end{foreignabstract}
 
 %\input{parts/foreword.tex}
-\vfill
+%\vfill
 %\input{parts/statement_of_collaboration.tex}
-\vfill
+%\vfill
 %\input{parts/document_change_record.tex}
 
 \clearpage
-\tableofcontents*
+\tableofcontents
+\newpage
 
 \mainmatter
-\pagestyle{newchap}
-Test\cite{shah}.
-%\input{parts/introduction.tex}
+\pagestyle{plain}
+\chapter{Sökuppgiften}
+%\setcounter{tocdepth}{1} 
+%\setcounter{secnumdepth}{3}
+\section{Notation}
 
-%\input{parts/background.tex}
+Söksträngar är skrivna i verbatim, som exempel \verb="en sök sträng"=. Booleska operatorer är skrivna in \textsc{versal stil}, dessa är, \textsc{and}, \textsc{or} samt \textsc{not}.
 
-%\input{parts/analysis.tex}
+\section{Databaser}
+I uppgiften var det givet att man skulle använda 2 olika databaser för sin sökning. Men jag har tagit det aktiva valet att expandera detta till samtliga fem:
+\textit{ACM Digital Library}\cite{ACM}, \textit{ArXiv.org}\cite{arxiv}, \textit{IEEE Xplore}\cite{IEEE}, \textit{Inspec}\cite{inspec} och \textit{Scopus}\cite{scopus}.
 
-%\input{parts/conclusions.tex}
+\section{Sökningen}
+Min initiala sökning som beskrivs i \ref{sec:first}, med analys av sökningen och resultat. Denna sökning förbättras till \ref{sec:second} genom att använda ord i \textit{Inspec} ur deras kontrollerade och kontrollerade ordlista.
+
+Senare gick jag över till att eftersom min sökning handlar om någon ganska nytt, och svårplacerat i deras tesaurus, så bestämde jag mig som beskrivs i \ref{sec:hard} att bredda min sökning med färre söktermer, men manuellt kolla på sammanfattningarna och titlarna för att göra en relevansvärdering.
+
+Eftersom jag inte var ännu nöjd med mitt resultat, breddade jag även ut mig för att söka i fler databaser, detta beskrivs vidare i \ref{sec:database}.
+\newpage
+\subsection{Första försök}
+\label{sec:first}
+Jag började att söka igenom databaserna \textit{IEEE Xplore} och \textit{Inspec} med följande fråga.
+\begin{center}
+\verb#("Digital currency")# \textsc{and} \verb#("future")#
+\end{center}
+Båda databaser gav under vanliga förutsättningar inga svar, däremot gav \textit{IEEE Xplore} 49st svar om man ändrade inställningarna på sökningen till en fulltext sökning.
+
+\subsubsection{Analys av sökstrategi}
+Själva sökningen gav inte några större resultat, vilket antagligen berodde på att orden ej var standardiserade och att jag endast fick resultat då jag sökte via fulltext sökning. Detta för att folk har i sina rapporter använt orden ``future'' och ``digital currency'' men dessa är vare sig 'taggar' eller välanvända ord i sammanfattningarna.
+
+\subsubsection{Resultat}
+Trotts detta fick jag en bra referens\cite{first}, som även hjälpte mig med att hitta bättre sökord inför nästa iteration. 
+Den gav mig detta resultat i \textit{IEEE Xplore}, vilket antagligen skulle hjälpa mig med framtida sökningar. 
+\begin{verbatim}
+    INSPEC: CONTROLLED INDEXING
+    electronic money.
+
+    INSPEC: UNCONTROLLED INDEXING
+    Bitcoin
+
+    IEEE TERMS
+    Cryptography
+    Currency
+\end{verbatim}
+
+
+Övrigt hade  denna artikel en väldigt ögonfallande 'abstract', som inledde med ``\textit{There's nothing like a dollar bill for paying a stripper.}''. Resten av sammanfattningen är bifogad i Bilaga \ref{app:abstract}.
+
+\subsection{Andra iterationen}
+\label{sec:second}
+Till andra sökningen har jag nu anpassat mig lite, och använder många fler ord än ``digital currency'' för att leta efter digitala valutor. Jag använder mig av \textsc{or} för att slå ihop sådant att en artikel kan innehålla något av de följande pengar-termena \textit{Digital currency}, \textit{Bitcoin}, \textit{electronic money} eller bara \textit{currency}. Sen binder jag ihop med att artikeln även måste vara taggad med orden \textit{cryptography} samt \textit{future} med \textsc{and}-operatorn.
+ Detta gav mig följande söksträng.
+\begin{center}
+(\verb#"Digital currency"# \textsc{OR} \verb#"Bitcoin"# \textsc{OR} \verb#"electronic money"# \textsc{OR} \verb#"currency"#) \textsc{AND} (\verb#"cryptography"#) \textsc{AND} (\verb#"future"#)
+\end{center}
+
+Denna gång fick jag betydligt mycket fler svar , men precisionen var ännu ganska låg. \textit{IEEE Xplore} gav mig 5 resultat utan, och 554 resultat med fulltext sökning. Samt \textit{Inspec} gav mig denna gång 23 resultat.
+
+\subsubsection{Analys av sökstrategi}
+Tillägget av fler ord än ``digital currency'' gav betydligt fler resultat, speciellt eftersom dessa ord finns i tesaurus och är relativt vanliga och bra ord. Sen även är många saker som vanligen handlar om icke digitala pengar (om de skulle vara 'taggade' med ``currency'') bortfiltrerade av satsen ``\textsc{AND} (\verb#"cryptography"#)''.
+
+Utan denna sats skulle det förekomma betydligt fler resultat i min resultatlista speciellt irrelevanta sådana.
+
+\subsubsection{Resultat}
+Trots att jag denna gång fick fler resultat, så hittade jag bara en\cite{second} som kändes relevant. Detta är en relativt gammal men titeln var extremt relevant till min fråga. ``Electronic cash-technology will denationalise money'' - ``Elektronisk pengar-teknik kommer avnationalisera pengarna''. Den handlar inte direkt om Bitcoins, men mer ett socio-ekonomiska effekter av teknologisk framgång.
+
+Även gav mig denna mig ett bra ord för framtida sökningar, istället för ``future'' ska jag använda ``technological forecasting'' för artiklar som försöker förutse framtiden genom teknologiska förändringar. Om bra artiklar finns kan de hända använda denna 'tag'.
+
+\subsection{Tredje iterationen}
+\label{sec:hard}
+I denna sökning så tänkte jag att jag mer eller mindre, egentligen bara ville ha saker taggade av ``technological forcasting'' istället för ``future'' samt utbredda min Bitcoin sökning till olika derivat genom att asterisk som ett jokertecken i slutet av bitcoin för att matcha med alla andra, exempelvis ``Bitcoins'', ``Bitcoin technology'' som jag har sett dyka upp i olika tesaurus. Jag kände att jag ville försöka vara mer precist, och därmed ta bort ``cryptography'' och ``currency''.
+Detta gav mig följande sökning.
+\begin{center}
+(\verb#"bitcoin*"# \textsc{OR} \verb#"electronic money"#) \textsc{AND} (\verb#"technological forecasting"#)
+\end{center}
+
+Denna gång gav gick jag 2 resultat (varav 12 via fulltext) på \textit{IEEE Xplore} och 11 resultat via \textit{Inspec}.
+
+\subsubsection{Analys av sökstrategi}
+Min känsla här är att det inte finns speciellt mycket skrivet om ``Bitcoin'', och skälet till att jag får väldigt få resultat kan vara mitt mycket begränsade område, samt även att det är relativt nytt. Jag borde helt enkelt bara kolla hur många artiklar som innehåller ordet ``Bitcoin'' och om de är rätt få, gå igenom dem manuellt - samt, även använda andra databaser.
+
+\subsubsection{Resultat}
+Fastän jag fick väldigt få resultat så fick jag en artikel i ögonvrån\cite{tre}.
+Denna måste läsas mer noggrant för att kunna analysera om detta val var en succé eller en flopp. Den handlar inte direkt om ``Bitcoin'' konstigt nog, utan mer generellt om virtuella pengar och inflation.
+
+\subsection{Slutgiltiga sökningen}
+\label{sec:database}
+Jag bestämde mig sedan slutligen att bara söka efter ``Bitcoin*'' för att se hur många resultat detta skulle ge. 
+Däremot fick jag inte några nya relevanta artiklar till min sökning, så jag bestämde mig att söka igenom några andra databaser efter ny information. Detta gav mig många bra papper om relevanta saker.
+
+Jag sökte då även igenom databaserna \textit{ACM Digital Library}, \textit{ArXiv.org} och \textit{Scopus}\cite{scopus}.
+
+\subsubsection{Analys av sökstrategi}
+Just i denna uppgift verkar det som det är mer relevant att söka efter allt man kan hitta som innehåller ``Bitcoin'' snarare än att använda logik för att begränsa sökningen för att undvika att få för många träffar. Att jag bestämde mig att kolla igenom ännu fler databaser kändes som en bra idé och visar sig ha lönat sig något avsevärt.
+
+\subsubsection{Resultat}
+Sökningen av bara \verb#``bitcoin*''# gav mig inte många resultat. 34 (respektive 7) via \textit{IEEE Xplore} på vid fulltext läge, samt 21 resultat på \textit{Inspec}. 
+Via \textit{Inspec} så hittade jag en artikel om pengartvättning då det gäller kryptovalutor\cite{Stokes}.
+I \textit{ACM} fann jag 45 resultat, varav tre stycken intressanta\cite{Christ, Martins}.
+\textit{ArXiV} fann jag 11 olika resultat, varav ett stort papper som påminner om ett exjobb om bitcoins\cite{bitsc}. 
+\textit{Scopus} fann jag 26 resultat, varav tre stycken intressanta\cite{scoop1, scoop2, scoop3}.
+
+\section{Diskussion om databaserna}
+De två första databaserna jag valde var \textit{IEEE Xplore} och \textit{Inspec} då dessa verkar vara något av de främsta artikel databaserna för data- och elektro-ingenjörer. Däremot kan man märka att man får en del krockar mellan dessa databaser då det mesta antas komma från ``Institution of Engineering and Technology''. Båda dessas sökverktyg fungerade ganska bra, dessvärre tror jag att det är mitt informationsbehov som sätter pinnen i hjulet för att visa hur pass bra de fungerar egentligen.
+
+Detta gjorde att jag mot slutet lade till \textit{The ACM Digital Library} som har sedan länge varit en stor motståndare till IEEE dominans. Tyvärr gav dig mig endast en artikel som är intressant, men tyvärr inte nödvändigtvis den bästa till mitt informationsbehov. 
+
+Då jag ändå inte var nöjd så använde jag även \textit{ArXiv.org} från Cornell Universitetet och fick en som jag tror är riktigt bra. \textit{ArXiv} har däremot ett lite sämre tillgängligt sökverktyg. Eftersom det är en liten ruta längst upp i hörnet förstår man inte att man kan göra vanliga sökningar i den.
+
+Sist men inte minst använde jag även \textit{Scopus} för att få några extra artiklar. 
+
+Alla databaserna verkade ha bristande information av det just jag behövde, men detta beror nog på att informationsmängden om ``Bitcoin'' är ganska låg. Utifrån mitt eget perspektiv så tror jag att den absolut bästa artikeln kan vara den jag fick från \textit{ArXiv}, som har ett långt papper med massor av diskussion, men även gott om referenser till tidigare och relevanta verk.
+
+\section{Mitt informationsbehov}
+Hur stort är mitt vidare informationsbehov efter dessa sökningar i alla dessa fem olika databaser?
+
+Jag skulle själv påstå att mitt informationsbehov med den information jag nu mottagit är relativt låg. Jag har många bra artiklar däremot som jag måste läsa igenom för att kunna fullfölja min uppgift och besvara på frågan. 
+
+Hur får jag tag på all denna information då? Ja, stora delar finns fulltexter länkade till via databaserna. Det var lite bökigt att göra det hemifrån, men jag kollade och såg att jag kunde ladda ned alla fulltexter via \textit{KTHB} för samtliga referenser. Skulle nu inte detta varit fallet, skulle jag behöva skicka en befrågan till biblioteket sådant att dem skulle kunna fixa fram en kopia till mig.
+
+Finns det kanske mer information jag inte hittat?
+Antagligen finns detta, och jag antar att dessa kan finnas i andra databaser, precis som att jag hittade många fler då jag sökte i fler databaser, så tvivlar jag inte på att det finns mer i andra. Sen finns det nog inom andra mer socio-ekonomiska artiklar skrivna av ekonomer och samhällsvetare som kan ha funderat kring framtida pengarsystem, mindre direkt länkade till ``Bitcoin'' men principiellt samma sak - globala valutor med mera. 
+
+\subsection{Val av litteratur}
+Jag valde min litteratur först genom att kolla på titeln på dokumentet. Om det låter relevant eller intressant så gick jag vidare och läste sammanfattningen, ``abstract'', på engelska. Då jag hade gjort detta så fick jag i några få fall även skumma lite snabbt igenom fulltexten för att se om den är överblickande av intresse för sökfrågan.
+
+%\chapter{Litteraturstudie}
 
 \cleardoublepage
 \printbibliography
 
-\listoffigures
-\listoftables
+%listoffigures
+%listoftables
 
 \cleardoublepage
 \appendix
-\addappheadtotoc
+\pagestyle{empty}
+\chapter{The cryptoanarchists' answer to cash}
+\section{Abstract}
+\label{app:abstract}
+There's nothing like a dollar bill for paying a stripper. 
+
+Anonymous, yet highly personal-wherever you use it, that dollar will fit the occasion. Purveyors of Internet smut, after years of hiding charges on credit cards, or just giving it away for free, recently found their own version of the dollar-a new digital currency called Bitcoin.
+
+%\addappheadtotoc
 
 \end{document}

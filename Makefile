@@ -6,12 +6,18 @@ FILENAME=Information
 
 default: pdf
 
-pdf: Information.pdf
+pdf: forced
 
 Information.pdf: Information.tex Information.bib
 	$(LATEX) Information
 	$(BIBTEX) Information
 	$(LATEX) Information
+
+forced: 
+	$(LATEX) Information
+	$(BIBTEX) Information
+	$(LATEX) Information
+
 
 draft: pdf
 	cp Information.pdf Information-`git reflog | head -1 | cut -d " " -f1`.pdf
